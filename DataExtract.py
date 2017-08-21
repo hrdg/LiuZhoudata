@@ -7,7 +7,7 @@ import xlwt
 import re
 from transfer2num import getResultForDigit
 from transfer2date import getDigitDate
-file_path = "E:/ZBall.xlsx"
+file_path = "E:/ZBall.xlsx"  # 记得修改文件名和路径
 pattern1 = re.compile(r'[A-Z][\w\d]{1,8}.[\w\d]{1,2}.\d{1,5}.[A-Z]{1,5}|[A-Z][\w\d]{2,15}.\d{3}')#采购编号
 pattern2 = re.compile(r'项目名称[^\n|\s]*[:：]{1}[\S]*')#项目采购名称 项目名称[^\n|\s]*[:：]{1}[\S]*
 pattern3 = re.compile(r'[零壹贰叁肆伍陆柒捌玖拾佰仟万亿元圆角]{1,20}[分整]?')#采购金额 中标.*?[零壹贰叁肆伍陆柒捌玖拾佰仟万亿元圆角]{1,20}[分整]?
