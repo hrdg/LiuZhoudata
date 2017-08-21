@@ -9,7 +9,7 @@ import re
 reload(sys)
 sys.setdefaultencoding( "utf-8" )'''
 
-file_path = "E:/olddata.xls"
+file_path = "E:/olddata.xls"  #  记得修改这里的路径和文件名
 
 pattern = re.compile(r'20170[123]\d{1,2}')  #匹配2017 1 2 3月的记录
 
